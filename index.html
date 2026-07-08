@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Bean Boutique Coffee Shop</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Bean Boutique Coffee Shop Logo">
+            </div>
+        </div>
+        <search class="search-bar">
+                <form action="search_results.html" method="get">
+                    <input type="text" name="query" placeholder="Search for coffee or pastries...">
+                    <button type="submit">Search</button>
+                </form>
+            </search>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coffee.html">Menu</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="offers.html">Special Offers</a></li>
+                <li><a href="cart.html">Shop with us</a></li>
+            </ul>
+        </nav>
+        <div class="slideshow-container">
+
+  <div class="slide fade">
+    <img src="images/coffee1.jpg" alt="Coffee 1">
+  </div>
+
+  <div class="slide fade">
+    <img src="images/ice brew.jpeg" alt="Coffee 2">
+  </div>
+
+  <div class="slide fade">
+    <img src="images/coffee 3.jpg" alt="Coffee 3">
+  </div>
+
+</div>
+        <header>
+            <h1>Welcome to Bean Boutique Coffee Shop</h1>
+            <p>Experience the finest coffee and pastries in town.</p>
+            <p>Visit us today and indulge in our cozy atmosphere!</p>
+        </header>
+        <section id="home" class="hero">
+            <div class="hero-overlay">
+                <div class ="hero-text">
+                <h2>Discover the Art of Coffee</h2>
+                <p>At Bean Boutique, we are passionate about crafting the perfect cup of coffee for our customers. Our baristas are trained to create a variety of coffee drinks, from classic espresso to unique seasonal blends.</p>
+                <p>We also offer a selection of freshly baked pastries to complement your coffee experience.</p>
+            <h2>Our Specialties</h2>
+            <p>Discover our wide range of coffee blends and freshly baked pastries.</p>
+            <a href="coffee.html" class="btn">View Menu</a>
+                </div>
+            </section>
+            <section class="about">
+                <h2>About Us</h2>
+                <p>Bean Boutique Coffee Shop is a local favorite, known for our high-quality coffee and welcoming atmosphere. We are committed to providing our customers with an exceptional coffee experience, whether you're stopping by for a quick cup or spending time with friends.</p>
+                <p>Our baristas are passionate about coffee and are always happy to share their knowledge and recommendations.</p>
+            </section>
+            <section class="testemonies">
+                <h1>What Our Customers Say</h1>
+                <p>"The best coffee I've ever had! The baristas are friendly and knowledgeable, and the pastries are to die for!" - Sarah L.</p>
+                <p>"I love coming here for my morning coffee. The atmosphere is cozy, and the coffee is always perfect." - John D.</p>
+                <p>"Bean Boutique is my go-to coffee shop. The seasonal blends are always a treat, and the staff makes me feel like family." - Emily R.</p>
+            </section>
+            <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to get in touch? We'd love to hear from you!</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Send Message</button>
+            </section>
