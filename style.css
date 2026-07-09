@@ -140,9 +140,5 @@ footer{
 
 .card{
     display:grid;
-    grid-template-rows:repeat(2, 1fr);
-    gap:20px;
-    padding:50px;
-    margin-top: 20px;
 }
 
