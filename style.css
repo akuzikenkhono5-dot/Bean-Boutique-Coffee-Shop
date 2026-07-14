@@ -55,7 +55,7 @@ header{
     background:#4e342e;
     color:white;
     text-align:center;
-    padding:100px 20px;
+    display: flex;
 }
 .menu{
     padding:50px;
@@ -88,12 +88,19 @@ h2{
     background-size:cover;
     background-position:center;
     height:400px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     color:white;
     text-align:center;
 }
+
+.hero-text{
+ padding-top: 80px;
+
+}
+
+.media{
+    display: flex;
+}
+
 .btn{
     display:inline-block;
     background:#ffca28;
@@ -106,6 +113,60 @@ h2{
 }
 .btn:hover{
     background:#ffb300;
+}
+
+
+.testmonial{
+    background-color: #4e342e;
+    padding: 20px;
+    text-align: center;
+    color:white;
+}
+
+.test-cards{
+    display:flex;
+    justify-content: space-around;
+}
+
+.test-card{
+    max-width: 300px;
+    background-color: #ffb300;
+    border-radius: 10px;
+    padding: 26px;
+}
+
+.contact h2{
+    text-align: center;
+}
+
+form{
+    padding:10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin:10px;
+}
+input{
+    padding:10px;
+    border:2px solid black;
+    margin-top: 4px;
+    border-radius:5px;
+    width:300px;
+}
+
+
+textarea{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+form button{
+    padding : 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffb300;
+    color: white;
 }
 
 footer{
@@ -145,19 +206,5 @@ footer{
     width:10px;
 
 }
-form{
-    padding:10px;
-    background-color: rgb(148, 111, 11);
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin:10px;
-}
-input[type="text"]{
-    padding:10px;
-    border:none;
-    border-radius:5px;
-    width:300px;
-}
-
 
 
