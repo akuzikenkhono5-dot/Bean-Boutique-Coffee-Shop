@@ -125,7 +125,15 @@ footer{
     display:flex;
 }
 
-
+.workshop{
+    background:#fff8f0;
+    border:1px solid #ccc;
+    border-radius:10px;
+    padding:20px;
+    margin:20px;
+    width:300px;
+    text-align:center;
+}
 
 
 

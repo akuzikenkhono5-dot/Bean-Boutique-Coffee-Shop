@@ -7,3 +7,7 @@ window.onclick = function(event) {
         model.style.display = "none";
     }
 }
+
+function searchProducts() {
+    let input = document.getElementById('searchbar').value.toLowerCase();
+    let productCards = document.getElementsByClassName('product-card');
