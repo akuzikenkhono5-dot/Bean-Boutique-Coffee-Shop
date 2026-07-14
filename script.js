@@ -8,6 +8,7 @@ window.onclick = function(event) {
     }
 }
 
-function searchProducts() {
-    let input = document.getElementById('searchbar').value.toLowerCase();
-    let productCards = document.getElementsByClassName('product-card');
+function searchProducts(){
+    
+}
+
