@@ -3,69 +3,76 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Bean Boutique Coffee Shop</title>
+        <title>Bean Boutique Coffee Shop</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
     </head>
     <body>
-        <search class="search-bar">
+        <!-- FIX 1: Keep the body open! All content stays inside <body> -->
+        <header>
+            <search class="search-bar">
                 <form action="search_results.html" method="get">
                     <input type="text" name="query" placeholder="Search for equipment...">
                     <button type="submit">Search</button>
                 </form>
             </search>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="coffee.html">Menu</a></li>
-                <li><a href="equipment.html" class="active">Equipment</a></li>
-                <li><a href="event.html">Events</a></li>
-                <li><a href="offers.html">Special Offers</a></li>
-                <li><a href="cart.html">Shop with us</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-            </ul>
-        </nav>
-    </body>
-    <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee.html">Menu</a></li>
+                    <li><a href="equipment.html" class="active">Equipment</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="offers.html">Special Offers</a></li>
+                    <li><a href="cart.html">Shop with us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- FIX 2: Separated <main> so it sits outside of <header> -->
         <main class="equipment">
             <h1>Our Coffee Equipment</h1>
             <p>At Bean Boutique Coffee Shop, we offer a wide range of coffee equipment to help you brew the perfect cup at home. From espresso machines to grinders, we have everything you need to elevate your coffee experience.</p>
             <p>Explore our selection of high-quality coffee equipment and find the perfect tools for your home brewing setup.</p>
             <p>Whether you're a seasoned barista or just starting your coffee journey, our equipment is designed to meet your needs and enhance your coffee-making skills.</p>
-        </main>
-    </header>
-    <section class="equipment-list">
-        <h2>Equipment Selection</h2>
-        <ul>
-            <li>Espresso Machines - Starting at $299.99</li>
-            <li>Coffee Grinders - Starting at $49.99</li>
-            <li>French Presses - Starting at $19.99</li>
-            <li>Pour Over Kits - Starting at $29.99</li>
-            <li>Milk Frothers - Starting at $24.99</li>
-            <li>Accessories (Filters, Tamper, etc.) - Various Prices</li>
-        </ul>
-        <p>All our equipment is sourced from reputable brands to ensure durability and performance.</p>
-    </section>
-    <p>This are our featured coffee equipment:</p>
-    <div class="card-grid">
-        <div class="card">
-            <img src="images/Espresso Machine.jpg" alt="Espresso Machine">
-            <h3>Espresso Machines</h3>
-            <p>Our espresso machines are perfect for creating rich and flavorful espresso shots at home. Choose from a variety of models to suit your brewing style.</p>
-        </div>
-        <div class="card">
-            <img src="images/French Press.jpg" alt="French Press">
-            <h3>French Presses</h3>
-            <p>Experience the classic French press brewing method with our high-quality French presses. Perfect for extracting the full flavor of your coffee beans.</p>
-        </div>
-    </div>
-     <footer>
-        <p>&copy; 2024 Bean Boutique Coffee Shop. All rights reserved.</p>
-    <div class="social-media">
-        <a href="https://www.facebook.com/BeanBoutiqueCoffeeShop" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/BeanBoutiqueCoffeeShop" target="_blank">Instagram</a>
-        <a href="https://www.twitter.com/BeanBoutiqueCoffeeShop" target="_blank">Twitter</a>
+            
+            <section class="equipment-list">
+                <h2>Equipment Selection</h2>
+                <ul>
+                    <li>Espresso Machines - Starting at $299.99</li>
+                    <li>Coffee Grinders - Starting at $49.99</li>
+                    <li>French Presses - Starting at $19.99</li>
+                    <li>Pour Over Kits - Starting at $29.99</li>
+                    <li>Milk Frothers - Starting at $24.99</li>
+                    <li>Accessories (Filters, Tamper, etc.) - Various Prices</li>
+                </ul>
+                <p>All our equipment is sourced from reputable brands to ensure durability and performance.</p>
+            </section>
 
-    </div>
-    </footer>
+            <p>This are our featured coffee equipment:</p>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="images/Espresso Machine.jpg" alt="Espresso Machine">
+                    <h3>Espresso Machines</h3>
+                    <p>Our espresso machines are perfect for creating rich and flavorful espresso shots at home. Choose from a variety of models to suit your brewing style.</p>
+                </div>
+                <div class="card">
+                    <img src="images/French Press.jpg" alt="French Press">
+                    <h3>French Presses</h3>
+                    <p>Experience the classic French press brewing method with our high-quality French presses. Perfect for extracting the full flavor of your coffee beans.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Bean Boutique Coffee Shop. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/BeanBoutiqueCoffeeShop" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/BeanBoutiqueCoffeeShop" target="_blank">Instagram</a>
+                <a href="https://www.twitter.com/BeanBoutiqueCoffeeShop" target="_blank">Twitter</a>
+            
+            </div>
+        </footer>
+    
+    </body>
 </html>
