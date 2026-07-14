@@ -52,7 +52,6 @@ nav ul li a:hover{
 }
 
 header{
-    slideshow:0.5s;
     background:#4e342e;
     color:white;
     text-align:center;
@@ -119,25 +118,9 @@ footer{
     width:100%;
 }
 
-.social-icons{
-     background:#4e342e;
-     text-align:center;
-    display:flex;
-    justify-content:center;
-    margin-bottom:10px;
+.social-media{
+    margin-top:10px;
 }
-
-.social-icons a{
-    color:white;
-    text-decoration:none;
-    font-size:20px;
-    margin:0 10px;
-    transition:.4s;
-}
-.social-icons a:hover{
-    color:#ffb300;
-}
-
 .card{
     display:grid;
 }
