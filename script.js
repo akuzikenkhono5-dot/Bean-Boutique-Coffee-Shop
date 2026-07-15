@@ -31,8 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // --- 3. HOMEPAGE QUICK CONTACT FORM VALIDATION ---
-    // Quick baseline verification for the mini-form at the bottom of the landing page
+    
     const homeForm = document.querySelector('.contact form');
     
     if (homeForm) {
@@ -65,11 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
-    // Grab all the deal items from the list
+    
     const dealItems = document.querySelectorAll('.offers ul li');
-    if (!dealItems.length) return; // Safety check in case the HTML structure changes
+    if (!dealItems.length) return; 
 
 
     const currentDay = new Date().getDay();
@@ -225,6 +223,124 @@ document.addEventListener('DOMContentLoaded', () => {
     if (searchForm) {
         searchForm.addEventListener('submit', (e) => {
             e.preventDefault();
+        });
+    }
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    
+    const registerButtons = document.querySelectorAll('.event .register-btn');
+
+    if (registerButtons.length > 0) {
+        registerButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                
+                const eventCard = event.target.closest('.event');
+
+                const eventName = eventCard.querySelector('h3').textContent;
+
+                
+                const userName = prompt(`Enter your name to register for: "${eventName}"`);
+
+                
+                if (userName && userName.trim() !== '') {
+                    alert(`Awesome! Thanks ${userName.trim()}, you're all set for the ${eventName}. See you there!`);
+                    
+                
+                    button.textContent = 'Registered ✓';
+                    button.disabled = true; 
+                    button.style.backgroundColor = '#28a745'; 
+                    button.style.color = '#fff';
+                    button.style.cursor = 'default';
+                }
+            });
+        });
+    }
+
+
+    
+    const searchForm = document.querySelector('.search-bar form');
+    if (searchForm) {
+        searchForm.addEventListener('submit', (e) => {
+            const queryInput = searchForm.querySelector('input[name="query"]');
+            if (!queryInput.value.trim()) {
+                alert('Please type something into the search bar first!');
+                e.preventDefault();
+            }
+        });
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Grab our interactive elements
+    const qtyInputs = document.querySelectorAll('.qty-input');
+    const removeButtons = document.querySelectorAll('.remove-btn');
+    const grandTotalSpan = document.getElementById('cart-grand-total');
+    const checkoutBtn = document.querySelector('.checkout-btn');
+
+    
+    function updateCartTotal() {
+        let grandTotal = 0;
+        const rows = document.querySelectorAll('tbody tr');
+
+        rows.forEach(row => {
+            const qtyInput = row.querySelector('.qty-input');
+            const itemTotalCell = row.querySelector('.item-total');
+            
+            if (qtyInput && itemTotalCell) {
+                const price = parseFloat(qtyInput.getAttribute('data-price'));
+                const quantity = parseInt(qtyInput.value) || 0;
+                
+    
+                const rowTotal = price * quantity;
+                itemTotalCell.textContent = `$${rowTotal.toFixed(2)}`;
+                
+                
+                grandTotal += rowTotal;
+            }
+        });
+
+        
+        if (grandTotalSpan) {
+            grandTotalSpan.textContent = grandTotal.toFixed(2);
+        }
+    }
+
+    
+    qtyInputs.forEach(input => {
+
+        input.addEventListener('input', () => {
+    
+            if (input.value < 1 && input.value !== '') {
+                input.value = 1;
+            }
+            updateCartTotal();
+        });
+    });
+
+    removeButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const row = e.target.closest('tr');
+            if (row) {
+                row.remove();
+                updateCartTotal(); 
+            }
+        });
+    });
+
+    if (checkoutBtn) {
+        checkoutBtn.addEventListener('click', () => {
+            const currentTotal = grandTotalSpan ? grandTotalSpan.textContent : '0.00';
+            
+            if (parseFloat(currentTotal) === 0) {
+                alert('Your cart is empty! Add some coffee equipment before checking out.');
+            } else {
+                alert(`Proceeding to payment gateway with a total of $${currentTotal}.`);
+            }
         });
     }
 });
