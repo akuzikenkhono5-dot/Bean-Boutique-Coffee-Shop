@@ -3,49 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Special Offers</title>
+    <link ref="stylesheet" href="style.css">
+    <script scr="script.js"></script>
+    <title>Special Offers </title>
 </head>
 <body>
-    <nav>
+    <header>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="coffee.html">Menu</a></li>
                 <li><a href="equipment.html">Equipment</a></li>
                 <li><a href="event.html">Events</a></li>
-                <li><a href="offers.html" class="active">Special Offers</a></li>
+                <li><a href="offers.html"class="active">Special Offers</a></li>
                 <li><a href="cart.html">Shop with us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+    </header>
+    <section class="hero">
+        <h2>Special Offers & Coffee Subscriptions</h2>
+        <p> Enjoy exclusive promotions and have your favourite freshly roasted  coffee delivered directly to your doorstep every month.</p>
+        <p> Save money while enjoying premium quality coffee.</p>
+         <a href="#subscriptions">
+            <button>Explore Plans</button>
+        </a>
+    </section>
+     <section class="offers">
+        <h2>Current Promotions</h2>
+         <div class="offer-card">
+             <h3> Buy 2 Get 1 Free</h3>
+             <p>Buy any two 500g bags of our signature coffee beans and receive one additional bag completely free</p>
+             <p><strong>Offer Ends:</strong> 31 August 2026</p>
+         </div>
+         <div class="offer-card">
+            <h3>Student Discount</h3>
+            <p>Students receive a 15% discount on all drinks and pastries</p>
+            <p>Present a valid student ID</p>
+         </div>
+         <div class="offer-card">
+            <h3>Free Delivery</h3>
+            <p>Spend over MWK 60,000 and enjoy FREE delivery within lilongwe</p>
+         </div>
+          <div class="offer-card">
+            <h3>Welcome Offer</h3>
+            <p>First-time customer receive 10% off using this coupon code:</p>
+             <h4>WELCOME10</h4>
+          </div>
+     </section>
+     <section id="subscriptions">
+         <h2>Choose Your Subscription</h2>
+         <table>
+            <tr>
+                <th>Plan</th>
+                <th>Monthly Price</th>
+                <th>Benefits</th>
+            </tr>
 
-<header>
-    <h1>Special Offers</h1>
-    <p>Check out our latest special offers and promotions! We are excited to bring you exclusive deals on our coffee, pastries, and equipment. Don't miss out on these limited-time offers!</p>
-    <p>Explore our current promotions and take advantage of these great deals while they last. Whether you're looking for a discount on your favorite coffee blend or a special offer on our equipment, we have something for everyone.</p>
-    <p>Our special offers are available for a limited time, so be sure to take advantage of these deals while they last. We look forward to serving you and making your coffee experience even more enjoyable!</p>
-</header>
-<section class="offers">
-    <h2>Exclusive Deals</h2>
-    <p>We are thrilled to offer our customers exclusive deals and promotions on a variety of products. From discounts on our premium coffee beans to special offers on our delicious pastries, there's something for everyone to enjoy.</p>
-    <p>Take advantage of our limited-time offers and treat yourself to the best coffee experience
-    <p>Don't miss out on these amazing deals! Check back regularly for new promotions and offers.</p>
-    <p>Here are some of our current exclusive deals:</p>
-    <ul>
-        <li>Buy one get one free on all pastries every Monday!</li>
-        <li>20% off all coffee beans purchased in-store on Wednesdays!</li>
-        <li>Free coffee mug with any purchase over $50 on Fridays!</li>
-    </ul>
-    <p>Visit us in-store or online to take advantage of these special offers. We look forward to serving you and making your coffee experience even more enjoyable!</p>
-</section>
-    <footer>
-        <p>&copy; 2024 Bean Boutique Coffee Shop. All rights reserved.</p>
-    <div class="social-media">
-        <a href="https://www.facebook.com/BeanBoutiqueCoffeeShop" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/BeanBoutiqueCoffeeShop" target="_blank">Instagram</a>
-        <a href="https://www.twitter.com/BeanBoutiqueCoffeeShop" target="_blank">Twitter</a>
-    </div>
-</footer>
+            <tr>
+                     <td>Starter</td>
+                     <td>MWK 25,000</td>
+                      <td>
+                    • 500g Premium Coffee Beans<br>
+                    • Monthly Delivery<br>
+                    • 5% Discount on Future Purchases
+                </td>
+            </tr>
+            <tr>
+                <td>Elite</td>
+                <td>MWK 70,000</td>
+                <td>
+                    • Four Premium Coffee Bags<br>
+                    • Free Delivery<br>
+                    • Exclusive Coffee Releases<br>
+                    • Coffee Workshop Invitations<br>
+                    • 15% Discount Storewide
+                </td>
+            </tr>
+            <tr>
+                 <td>Premium</td>
+                <td>MWK 45,000</td>
+                <td>
+                    • Two 500g Coffee Bags<br>
+                    • Free Delivery<br>
+                    • Seasonal Coffee Blends<br>
+                    • 10% Store Discount
+                </td>
+            </tr>
+         </table>
+        </section>
+        <section class="benefits">
+             <h2>Why Subscribe?</h2>
+             <ul>
+                 <li>Fresh coffee roasted before every delivery.</li>
+                <li>Never run out of your favourite coffee.</li>
+                <li>Exclusive discounts available only to members.</li> 
+                <li>Free delivery on selected plans.</li>
+                <li>Invitation to coffee tasting workshops</li>
+                <li>Flexible plans that can be paused or cancelled at any time.</li>
+             </ul>
+        </section>
+         <section class="subscribe">
+            <h2>Subscribe Today</h2>
+            <p>Complete the form below and begin your coffee journey with Bean Boutique.</p>
+            <form action="#" method="post">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <label for="plan">Select Subscription Plan</label><br>
+                <select id="plan" name="plan">
+                     <option>Starter</option>
+                     <option>Elite</option>
+                     <option>Premium</option>
+                </select>
+                <br><br>
+                <label for="address">Delivery Address</label><br>
+                <textarea>
+                      id="address"
+                      name="address"
+                      rows="4"
+                      cols="40"
+                      required</textarea>
+            </form>
+         </section>
+         <section class="cta">
+             <h2>Become Part of the Bean Boutique Family</h2>
+             <p>Join those who enjoy freashly roasted, ethically sourced coffee and freshly baked goodies delivered straight to your homes.</p>
+             <p>Choose the subscription plan that suits you and enjoy exclusive savings every month.</p>
+         </section>
+          <footer>
+            <p>&copy; 2024 Bean Boutique Coffee Shop. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/BeanBoutiqueCoffeeShop" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://www.instagram.com/BeanBoutiqueCoffeeShop" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.twitter.com/BeanBoutiqueCoffeeShop" target="_blank" rel="noopener">Twitter</a>
+            </div>
+        </footer>
 </body>
 </html>
