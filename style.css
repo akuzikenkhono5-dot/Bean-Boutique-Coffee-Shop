@@ -51,12 +51,16 @@ nav ul li a:hover{
     border-radius:8px;
 }
 
-
+a{
+    text-decoration: none;
+}
 .menu{
     padding:50px;
     text-align:center;
+}
 
-
+ul{
+    list-style: none;
 }
 .menu h2{
     font-size:30px;
@@ -198,6 +202,7 @@ footer{
     width:10px;
 
 }
+
 
 
 

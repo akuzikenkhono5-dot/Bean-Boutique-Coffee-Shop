@@ -5,17 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bean Boutique Coffee Shop</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body>
         
         <header>
-            <search class="search-bar">
-                <form action="search_results.html" method="get">
-                    <input type="text" name="query" placeholder="Search for equipment...">
-                    <button type="submit">Search</button>
-                </form>
-            </search>
+           
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -29,7 +23,12 @@
             </nav>
         </header>
 
-        <!-- Separated <main> so it sits outside of <header> -->
+         <search class="search-bar">
+                <form action="search_results.html" method="get">
+                    <input type="text" name="query" placeholder="Search for equipment...">
+                    <button type="submit">Search</button>
+                </form>
+            </search>
         <main class="equipment">
             <h1>Our Coffee Equipment</h1>
             <p>At Bean Boutique Coffee Shop, we offer a wide range of coffee equipment to help you brew the perfect cup at home. From espresso machines to grinders, we have everything you need to elevate your coffee experience.</p>
@@ -48,8 +47,6 @@
                 </ul>
                 <p>All our equipment is sourced from reputable brands to ensure durability and performance.</p>
             </section>
-
-            <!-- CORRECTION 2: Fixed the typo "This are" to "These are" -->
             <p>These are our featured coffee equipment:</p>
             <div class="card-grid">
                 <div class="card">
@@ -78,5 +75,6 @@
                 <a href="https://www.twitter.com/BeanBoutiqueCoffeeShop" target="_blank" rel="noopener">Twitter</a>
             </div>
         </footer>
+         <script src="script.js"></script>
     </body>
 </html>
