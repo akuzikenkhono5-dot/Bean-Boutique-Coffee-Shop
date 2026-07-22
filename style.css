@@ -211,13 +211,15 @@ footer{
 .offers{
     text-align: center;
 }
-.
 
-
-@media (max-width = '780px') {
-
-    
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
-
-
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
