@@ -367,3 +367,15 @@ footer{
     object-fit: cover;
 }
 
+.table th{
+    background-colour:white;
+    padding: 0.5em;
+    text-align:center;
+
+}
+
+.table td{
+    border: 0.1em solid blanchedalmond;
+    text-align: center;
+}
+
