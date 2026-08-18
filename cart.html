@@ -24,55 +24,39 @@
     
     <!-- FIX 5: Moved everything inside the body element where it belongs -->
     <main>
-        <section class="cart">
-            <h1>Your Shopping Cart</h1>
-            <p>Review the items in your cart and proceed to checkout.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Espresso Machine</td>
-                        <td>1</td>
-                        <td>$299.99</td>
-                        <td>$299.99</td>
-                    </tr>
-                    <tr>
-                        <td>Coffee Grinder</td>
-                        <td>2</td>
-                        <td>$49.99</td>
-                        <td>$99.98</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Total: $399.97</p>
-            <button class="checkout-btn">Proceed to Checkout</button>
-        </section>
-    </main>
-
-    <tbody>
-    <tr>
-        <td>Espresso Machine</td>            
-        <td><input type="number" class="qty-input" value="1" min="1" data-price="299.99"></td>
-        <td>$299.99</td>
-        <td class="item-total">$299.99</td>
-        <td><button class="remove-btn">Remove</button></td>
-    </tr>
-    <tr>
-        <td>Coffee Grinder</td>
-        <td><input type="number" class="qty-input" value="2" min="1" data-price="49.99"></td>
-        <td>$49.99</td>
-        <td class="item-total">$99.98</td>
-        <td><button class="remove-btn">Remove</button></td>
-    </tr>
-</tbody>
-
+     <section class="cart">
+    <h1>Your Shopping Cart</h1>
+    <p>Review the items in your cart and proceed to checkout.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Espresso Machine</td>            
+                <td><input type="number" class="qty-input" value="1" min="1" data-price="299.99"></td>
+                <td>$299.99</td>
+                <td class="item-total">$299.99</td>
+                <td><button class="remove-btn">Remove</button></td>
+            </tr>
+            <tr>
+                <td>Coffee Grinder</td>
+                <td><input type="number" class="qty-input" value="2" min="1" data-price="49.99"></td>
+                <td>$49.99</td>
+                <td class="item-total">$99.98</td>
+                <td><button class="remove-btn">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Total: $399.97</p>
+    <button class="checkout-btn">Proceed to Checkout</button>
+</section>
     <footer>
         <p>&copy; 2024 Bean Boutique Coffee Shop. All rights reserved.</p>
         <div class="social-media">
