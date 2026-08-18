@@ -377,5 +377,220 @@ footer{
 .table td{
     border: 0.1em solid blanchedalmond;
     text-align: center;
+}.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: inherit;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
 }
+
+.cart th, 
+.cart td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cart th {
+    background-color: #3e2723; /* Dark warm coffee brown */
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.cart tbody tr:hover {
+    background-color: #fcf8f5; /* Light warm hover effect */
+}
+
+/* Quantity Input Styling */
+.cart .qty-input {
+    width: 60px;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.cart .qty-input:focus {
+    outline: none;
+    border-color: #6d4c41;
+}
+
+/* Action Buttons */
+.cart .remove-btn {
+    background-color: #e53935;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease;
+}
+
+.cart .remove-btn:hover {
+    background-color: #c62828;
+}
+
+.cart .checkout-btn {
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.cart .checkout-btn:hover {
+    background-color: #1b5e20;
+}
+
+/* ==========================================
+   Special Offers & Subscriptions Styling
+   ========================================== */
+
+/* Hero & CTA Sections */
+.hero, .cta {
+    background-color: #fdfaf6;
+    border-left: 5px solid #6d4c41;
+    padding: 2.5rem 1.5rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+.hero button {
+    background-color: #6d4c41;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.hero button:hover {
+    background-color: #3e2723;
+}
+
+/* Promotions Grid */
+.offers {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.offer-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-4px);
+}
+
+.offer-card h4 {
+    display: inline-block;
+    background-color: #efebe9;
+    color: #3e2723;
+    padding: 6px 12px;
+    border: 1px dashed #6d4c41;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* Subscription Table */
+#subscriptions {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+#subscriptions table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#subscriptions th, 
+#subscriptions td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#subscriptions th {
+    background-color: #3e2723;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+#subscriptions tr:hover {
+    background-color: #fcf8f5;
+    cursor: pointer;
+}
+
+/* Subscription Form */
+.subscribe {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.subscribe input[type="text"],
+.subscribe input[type="email"],
+.subscribe input[type="password"],
+.subscribe select,
+.subscribe textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.subscribe input[type="submit"] {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.subscribe input[type="submit"]:hover {
+    background-color: #1b5e20;
+}
+
 
